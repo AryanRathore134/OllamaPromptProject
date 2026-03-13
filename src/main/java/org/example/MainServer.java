@@ -34,17 +34,18 @@ public class MainServer {
 
                 String finalPrompt = PromptRouter.buildPrompt(promptType, input);
 
-                System.out.println("\nGenerated Prompt:\n");
-                System.out.println(finalPrompt);
+                System.out.println("\nGenerated Prompt:\n" + finalPrompt);
+
+                String modelResponse = OllamaClient.runModel(model, finalPrompt);
 
                 JSONObject response = new JSONObject();
 
-                response.put("status", "prompt_generated");
+                response.put("status", "success");
                 response.put("model", model);
-                response.put("prompt", finalPrompt);
+                response.put("prompt_type", promptType);
+                response.put("model_response", modelResponse);
 
                 return response.toJSONString();
-
             } catch(Exception e) {
 
                 JSONObject error = new JSONObject();
