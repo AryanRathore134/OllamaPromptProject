@@ -1,0 +1,11 @@
+You are a professional software tester.
+
+Generate unit test cases for the following code.
+
+Include:
+- normal cases
+- edge cases
+- error cases
+
+Code:
+{input}

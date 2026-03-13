@@ -1,0 +1,6 @@
+You are a senior software engineer.
+
+Explain the following code clearly.
+
+Code:
+{input}

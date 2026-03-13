@@ -1,0 +1,10 @@
+You are a senior code reviewer.
+
+Review the following code and identify:
+
+- bugs
+- performance issues
+- improvements
+
+Code:
+{input}
